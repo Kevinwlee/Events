@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0A4B18FC1631A0E800D57A93 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4B18FB1631A0E800D57A93 /* icon@2x.png */; };
-		0A4B18FF1631A0FD00D57A93 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4B18FE1631A0FD00D57A93 /* icon@2x.png */; };
 		0A4B19031631DBB500D57A93 /* QTKEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B19011631DBB500D57A93 /* QTKEventsTableViewController.m */; };
 		0A4B19041631DBB500D57A93 /* QTKEventsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A4B19021631DBB500D57A93 /* QTKEventsTableViewController.xib */; };
 		0A4B19071631DC1700D57A93 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4B19051631DC1700D57A93 /* EventKit.framework */; };
@@ -26,11 +25,11 @@
 		0AAF05961630BE3C00259E85 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAF05951630BE3C00259E85 /* Default-568h@2x.png */; };
 		0AAF05991630BE3C00259E85 /* QTKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF05981630BE3C00259E85 /* QTKViewController.m */; };
 		0AAF059C1630BE3C00259E85 /* QTKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAF059A1630BE3C00259E85 /* QTKViewController.xib */; };
+		0AD7A4471639650E00DE75C1 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AD7A4451639650E00DE75C1 /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A4B18FB1631A0E800D57A93 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		0A4B18FE1631A0FD00D57A93 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		0A4B19001631DBB500D57A93 /* QTKEventsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKEventsTableViewController.h; sourceTree = "<group>"; };
 		0A4B19011631DBB500D57A93 /* QTKEventsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTKEventsTableViewController.m; sourceTree = "<group>"; };
 		0A4B19021631DBB500D57A93 /* QTKEventsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QTKEventsTableViewController.xib; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		0AAF05971630BE3C00259E85 /* QTKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTKViewController.h; sourceTree = "<group>"; };
 		0AAF05981630BE3C00259E85 /* QTKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTKViewController.m; sourceTree = "<group>"; };
 		0AAF059B1630BE3C00259E85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/QTKViewController.xib; sourceTree = "<group>"; };
+		0AD7A4461639650E00DE75C1 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,6 @@
 		0AAF05701630BE3B00259E85 = {
 			isa = PBXGroup;
 			children = (
-				0A4B18FE1631A0FD00D57A93 /* icon@2x.png */,
 				0A4B18FA1631A0E800D57A93 /* Images */,
 				0AAF05851630BE3B00259E85 /* Events */,
 				0AAF057E1630BE3B00259E85 /* Frameworks */,
@@ -116,6 +115,7 @@
 		0AAF05851630BE3B00259E85 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				0AD7A4491639651B00DE75C1 /* Data Model */,
 				0AAF058E1630BE3C00259E85 /* QTKAppDelegate.h */,
 				0AAF058F1630BE3C00259E85 /* QTKAppDelegate.m */,
 				0AAF05971630BE3C00259E85 /* QTKViewController.h */,
@@ -144,6 +144,14 @@
 				0AAF05951630BE3C00259E85 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AD7A4491639651B00DE75C1 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				0AD7A4451639650E00DE75C1 /* DataModel.xcdatamodeld */,
+			);
+			name = "Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +212,6 @@
 				0AAF05961630BE3C00259E85 /* Default-568h@2x.png in Resources */,
 				0AAF059C1630BE3C00259E85 /* QTKViewController.xib in Resources */,
 				0A4B18FC1631A0E800D57A93 /* icon@2x.png in Resources */,
-				0A4B18FF1631A0FD00D57A93 /* icon@2x.png in Resources */,
 				0A4B19041631DBB500D57A93 /* QTKEventsTableViewController.xib in Resources */,
 				0A4B190D1631F1BC00D57A93 /* QTKEventTypeViewController.xib in Resources */,
 			);
@@ -222,6 +229,7 @@
 				0AAF05991630BE3C00259E85 /* QTKViewController.m in Sources */,
 				0A4B19031631DBB500D57A93 /* QTKEventsTableViewController.m in Sources */,
 				0A4B190C1631F1BC00D57A93 /* QTKEventTypeViewController.m in Sources */,
+				0AD7A4471639650E00DE75C1 /* DataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +351,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0AD7A4451639650E00DE75C1 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0AD7A4461639650E00DE75C1 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 0AD7A4461639650E00DE75C1 /* DataModel.xcdatamodel */;
+			name = DataModel.xcdatamodeld;
+			path = ../DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0AAF05721630BE3B00259E85 /* Project object */;
 }

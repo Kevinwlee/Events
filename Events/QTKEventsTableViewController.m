@@ -65,6 +65,7 @@
 	
 	// Create the predicate. Pass it the default calendar.
 	NSArray *calendarArray = [NSArray arrayWithObject:self.defaultCalendar];
+    
 	NSPredicate *predicate = [self.eventStore predicateForEventsWithStartDate:startDate endDate:endDate
                                                                     calendars:calendarArray];
 	
