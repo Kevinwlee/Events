@@ -25,7 +25,7 @@
 		0AAF05961630BE3C00259E85 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AAF05951630BE3C00259E85 /* Default-568h@2x.png */; };
 		0AAF05991630BE3C00259E85 /* QTKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF05981630BE3C00259E85 /* QTKViewController.m */; };
 		0AAF059C1630BE3C00259E85 /* QTKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAF059A1630BE3C00259E85 /* QTKViewController.xib */; };
-		0AD7A4471639650E00DE75C1 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AD7A4451639650E00DE75C1 /* DataModel.xcdatamodeld */; };
+		0AD7A4471639650E00DE75C1 /* Events.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AD7A4451639650E00DE75C1 /* Events.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +54,7 @@
 		0AAF05971630BE3C00259E85 /* QTKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTKViewController.h; sourceTree = "<group>"; };
 		0AAF05981630BE3C00259E85 /* QTKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTKViewController.m; sourceTree = "<group>"; };
 		0AAF059B1630BE3C00259E85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/QTKViewController.xib; sourceTree = "<group>"; };
-		0AD7A4461639650E00DE75C1 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		0AD7A4461639650E00DE75C1 /* Events.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Events.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +149,7 @@
 		0AD7A4491639651B00DE75C1 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				0AD7A4451639650E00DE75C1 /* DataModel.xcdatamodeld */,
+				0AD7A4451639650E00DE75C1 /* Events.xcdatamodeld */,
 			);
 			name = "Data Model";
 			sourceTree = "<group>";
@@ -229,7 +229,7 @@
 				0AAF05991630BE3C00259E85 /* QTKViewController.m in Sources */,
 				0A4B19031631DBB500D57A93 /* QTKEventsTableViewController.m in Sources */,
 				0A4B190C1631F1BC00D57A93 /* QTKEventTypeViewController.m in Sources */,
-				0AD7A4471639650E00DE75C1 /* DataModel.xcdatamodeld in Sources */,
+				0AD7A4471639650E00DE75C1 /* Events.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,14 +353,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0AD7A4451639650E00DE75C1 /* DataModel.xcdatamodeld */ = {
+		0AD7A4451639650E00DE75C1 /* Events.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0AD7A4461639650E00DE75C1 /* DataModel.xcdatamodel */,
+				0AD7A4461639650E00DE75C1 /* Events.xcdatamodel */,
 			);
-			currentVersion = 0AD7A4461639650E00DE75C1 /* DataModel.xcdatamodel */;
-			name = DataModel.xcdatamodeld;
-			path = ../DataModel.xcdatamodeld;
+			currentVersion = 0AD7A4461639650E00DE75C1 /* Events.xcdatamodel */;
+			name = Events.xcdatamodeld;
+			path = ../Events.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

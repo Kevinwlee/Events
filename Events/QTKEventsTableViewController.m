@@ -43,6 +43,7 @@
         // Get the default calendar from store.
         self.defaultCalendar = [self.eventStore defaultCalendarForNewEvents];
         [self.eventsList addObjectsFromArray:[self fetchEventsForToday]];
+        [self scheduleNotificationsForEvents];
         [self.tableView reloadData];
         
     }];
@@ -71,16 +72,25 @@
 	
 	// Fetch all events that match the predicate.
 	NSArray *events = [self.eventStore eventsMatchingPredicate:predicate];
-    
 	return events;
+}
 
+- (void)scheduleNotificationsForEvents {
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    for (EKEvent *event in self.eventsList) {
+        if (!event.isAllDay) {
+            [self addNotificationForEvent:event];
+        }
+    }
 }
 
 - (void)addNotificationForEvent:(EKEvent*)event {
+    
     UILocalNotification *localNotificaiton = [[UILocalNotification alloc] init];
     [event.endDate dateByAddingTimeInterval:60];
     localNotificaiton.fireDate = [event.endDate dateByAddingTimeInterval:60];
     localNotificaiton.timeZone =  [NSTimeZone defaultTimeZone];
+
     NSLog(@"Fire Date: %@", localNotificaiton.fireDate);
     localNotificaiton.alertBody = @"Was that productive?";
     localNotificaiton.soundName = UILocalNotificationDefaultSoundName;
